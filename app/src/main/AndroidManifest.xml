@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.application">
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAm5SI80r9u0dH1raFtYKryp3jT-XE4Y1A"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Activities.AddGymDataActivity"></activity>
+        <activity android:name=".Activities.GymOwnerProfileActivity" />
+        <activity android:name=".Owner" />
+        <activity android:name=".GymOwnerLogin" />
+        <activity android:name=".Index">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>
