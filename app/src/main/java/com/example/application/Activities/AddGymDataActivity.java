@@ -8,23 +8,41 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.application.Models.GymDetails;
+import com.example.application.Models.GymOwnerData;
 import com.example.application.R;
+import com.example.application.Utils.DataProcessor;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import static com.example.application.Utils.Constants.FIRST_LOGIN_OWNER;
+import static com.example.application.Utils.Constants.GYM_DATA;
+import static com.example.application.Utils.Constants.GYM_ID;
+import static com.example.application.Utils.Constants.GYM_OWNER;
+import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 
 public class AddGymDataActivity extends AppCompatActivity {
     private final static int PLACE_PICKER_REQUEST = 999;
     double latitude;
     double longitude;
-    EditText gym_name,gym_address,coordinates,website,contactPerson,contactno;
+    EditText gym_name,gym_address,coordinates,website,contactPerson,contactno,des;
     Button submit;
+    DatabaseReference databaseGymData;
+    DataProcessor dataProcessor;
+    String ownerId="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_gym_data);
+        dataProcessor=new DataProcessor(this);
+        ownerId=dataProcessor.getStr(GYM_OWNER_ID);
+        databaseGymData = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(ownerId);
         initViews();
     }
 
@@ -35,6 +53,7 @@ public class AddGymDataActivity extends AppCompatActivity {
         website = findViewById(R.id.gym_url);
         contactPerson = findViewById(R.id.name);
         contactno = findViewById(R.id.contact_no);
+        des = findViewById(R.id.des);
         submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,8 +70,21 @@ public class AddGymDataActivity extends AppCompatActivity {
                     contactPerson.setError("Enter a Name");
                 }else if(contactno.getText().toString().length()==0){
                     contactno.setError("Enter a contact Number");
+
                 }else{
+
+
                     //TODO:push to firebase
+                    String id1=databaseGymData.push().getKey();
+                    GymDetails gymDetails=new GymDetails(id1,ownerId,gym_name.getText().toString(),gym_address.getText().toString()
+                            ,website.getText().toString(),
+                            contactPerson.getText().toString(),contactno.getText().toString(),latitude,longitude,des.getText().toString());
+                    databaseGymData.child(id1).setValue(gymDetails);
+                    dataProcessor.setBool(FIRST_LOGIN_OWNER,true);
+                    dataProcessor.setStr(GYM_ID,id1);
+                    Toast.makeText(AddGymDataActivity.this, "Gym updated", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(AddGymDataActivity.this,GymOwnerProfileActivity.class));
+                    finish();
                 }
             }
         });
@@ -87,7 +119,7 @@ public class AddGymDataActivity extends AppCompatActivity {
                     String placeName = String.format("Place: %s", place.getName());
                      latitude = place.getLatLng().latitude;
                      longitude = place.getLatLng().longitude;
-                     coordinates.setText("Latitude :"+latitude+", Longitude :"+longitude);
+                     coordinates.setText(latitude +","+longitude);
 
             }
         }

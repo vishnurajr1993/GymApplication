@@ -1,23 +1,28 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:15:1-25:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\005bb045674ffc68e958428306b1f81e\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0546ab4e7608c7715029f0b511261acf\firebase-database-collection-16.0.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-database:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9f06decc84da5ec2b334b7c418ab3df1\jetified-firebase-database-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\694ee73e92db1f3a53b53a4cda5c6645\jetified-play-services-places-12.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\67c888bb4a6d13f6f2799c1d40fdc9f1\jetified-firebase-database-connection-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c198ce0c81347ed9569ad5b03dec77c\jetified-play-services-tasks-12.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\311dc5891883bf77f7522055b4693dd7\transition-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3c16f5091db1e3ae8df9f2afbbfffb69\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9d69be0293d4431ce361bf9eef5eb798\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -30,128 +35,201 @@ MERGED from [androidx.media:media:1.0.0] C:\Users\vinu\.gradle\caches\transforms
 MERGED from [androidx.core:core:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3b5f33a5677108152932e8b8d7b62176\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\46064b9613e01513c77c425125634a03\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bb3390a370f1a633e35be4c965db9d43\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ffd26151ed0b7b04ff1e501041f19be8\firebase-database-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0fd1c81d9173a0281f1bcaadf9fda534\play-services-places-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\612f605b36f3399247514256c80e3b1b\firebase-database-connection-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1e8fbc985ebff74379add7002b6ad727\play-services-basement-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4775fa430d716619139759865d95f95d\firebase-common-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94b9ec1cf1661a99509bc7324b82c38\play-services-tasks-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1acb15415b1fa349bda0a217b00c73f4\play-services-base-license-12.0.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d594054b0a1c1663b8c9d8c82bc53716\play-services-maps-license-12.0.0\AndroidManifest.xml:2:1-8:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:22-77
+meta-data#com.google.android.geo.API_KEY
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-12:67
+	android:value
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-64
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-54
 application
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:5-37:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\005bb045674ffc68e958428306b1f81e\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\005bb045674ffc68e958428306b1f81e\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\694ee73e92db1f3a53b53a4cda5c6645\jetified-play-services-places-12.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\694ee73e92db1f3a53b53a4cda5c6645\jetified-play-services-places-12.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c198ce0c81347ed9569ad5b03dec77c\jetified-play-services-tasks-12.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c198ce0c81347ed9569ad5b03dec77c\jetified-play-services-tasks-12.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:5-89
 MERGED from [androidx.core:core:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ffd26151ed0b7b04ff1e501041f19be8\firebase-database-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ffd26151ed0b7b04ff1e501041f19be8\firebase-database-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0fd1c81d9173a0281f1bcaadf9fda534\play-services-places-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-places-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0fd1c81d9173a0281f1bcaadf9fda534\play-services-places-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\612f605b36f3399247514256c80e3b1b\firebase-database-connection-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-database-connection-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\612f605b36f3399247514256c80e3b1b\firebase-database-connection-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1e8fbc985ebff74379add7002b6ad727\play-services-basement-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1e8fbc985ebff74379add7002b6ad727\play-services-basement-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4775fa430d716619139759865d95f95d\firebase-common-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-common-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4775fa430d716619139759865d95f95d\firebase-common-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94b9ec1cf1661a99509bc7324b82c38\play-services-tasks-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94b9ec1cf1661a99509bc7324b82c38\play-services-tasks-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1acb15415b1fa349bda0a217b00c73f4\play-services-base-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-base-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1acb15415b1fa349bda0a217b00c73f4\play-services-base-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d594054b0a1c1663b8c9d8c82bc53716\play-services-maps-license-12.0.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d594054b0a1c1663b8c9d8c82bc53716\play-services-maps-license-12.0.0\AndroidManifest.xml:5:5-6:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:9-41
 	android:roundIcon
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-59
-activity#com.example.application.Activities.AddGymDataActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-76
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:9-59
+activity#com.example.application.Activities.SplashScreen
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:19-64
-activity#com.example.application.Activities.GymOwnerProfileActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:13:9-72
-	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:13:19-69
-activity#com.example.application.Owner
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:9-43
-	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:19-40
-activity#com.example.application.GymOwnerLogin
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:15:9-51
-	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:15:19-48
-activity#com.example.application.Index
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:9-22:20
-	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:19-40
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:27-74
+activity#com.example.application.Activities.AddGymDataActivity
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:9-67
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:19-64
+activity#com.example.application.Activities.GymOwnerProfileActivity
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:9-72
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:19-69
+activity#com.example.application.Owner
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:9-43
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:19-40
+activity#com.example.application.GymOwnerLogin
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:9-51
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:19-48
+activity#com.example.application.Index
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:9-34:20
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:19-40
 activity#com.example.application.Register
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:9-46
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:9-46
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:19-43
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:19-43
+activity#com.example.application.Dialogs.AddGymServicesDialog
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:9-66
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:19-63
 uses-sdk
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85843906538799809b860890e03c3306\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f3727a8777fd24b60f54249987d59532\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\005bb045674ffc68e958428306b1f81e\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\005bb045674ffc68e958428306b1f81e\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0546ab4e7608c7715029f0b511261acf\firebase-database-collection-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0546ab4e7608c7715029f0b511261acf\firebase-database-collection-16.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9f06decc84da5ec2b334b7c418ab3df1\jetified-firebase-database-12.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9f06decc84da5ec2b334b7c418ab3df1\jetified-firebase-database-12.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\694ee73e92db1f3a53b53a4cda5c6645\jetified-play-services-places-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\694ee73e92db1f3a53b53a4cda5c6645\jetified-play-services-places-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\67c888bb4a6d13f6f2799c1d40fdc9f1\jetified-firebase-database-connection-12.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-connection:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\67c888bb4a6d13f6f2799c1d40fdc9f1\jetified-firebase-database-connection-12.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c198ce0c81347ed9569ad5b03dec77c\jetified-play-services-tasks-12.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c198ce0c81347ed9569ad5b03dec77c\jetified-play-services-tasks-12.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e0521e32c1a8b86d42e9784023699798\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\10528e3c0516ca018ee98e68ab81a927\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\622efde798c98c070aa4d58a49a3650a\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\6d603a410b84297a20ae16898e90454c\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbf291d06e6d73e5a69cf00e352da007\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a55e7986de8d8f2644af0f215ba3f8e7\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d3646f00db847713829affca304a1387\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\311dc5891883bf77f7522055b4693dd7\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\311dc5891883bf77f7522055b4693dd7\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\85803006e29ded2666eadf0130116cfe\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3c16f5091db1e3ae8df9f2afbbfffb69\viewpager-1.0.0\AndroidManifest.xml:20:5-44
@@ -176,6 +254,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vi
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\08dc003a8d730f1cd14413ef933142f3\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\878b964d78564d0d46095360e074f07c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f6a2e342028971f08b98514d4fe14869\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d995825eac125ea0dbe1740b2a77afe8\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3b5f33a5677108152932e8b8d7b62176\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -186,14 +266,14 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\vinu\.gradle\caches\transforms
 MERGED from [androidx.print:print:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bb3390a370f1a633e35be4c965db9d43\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\54b1eff228bc9be080bf4e96bc0126e3\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\04ca6ca8519f3d6559c3627ba70da8d8\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\65b62d34fffb8020447f7298ffab5bbb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\86fe573e00c587008c6329aa2663058c\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\be7acfdbfd31e8a0b5dad63939a8f1de\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -204,35 +284,39 @@ INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifes
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bbed5a858e2d16c341d1b9c2a1cfad9d\jetified-firebase-database-16.0.4\AndroidManifest.xml:23:22-64
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\0ac8d5f18bc85ad32b4f54e27a9f80ed\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+ADDED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:8:9-12:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+		ADDED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+		ADDED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:11:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+		ADDED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:12:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4b5239543ae5062528120a3cee03faf1\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:9:13-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\b353327d94df5a88b6b34eb70858cf56\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-39:12 reason: com.google.android.gms.license has a targetSdkVersion < 4

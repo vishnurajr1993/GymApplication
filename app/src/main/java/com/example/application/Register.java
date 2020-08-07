@@ -15,6 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import static com.example.application.Utils.Constants.GYM_OWNER;
+import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 import static com.example.application.Utils.Constants.ROLE;
 
 public class Register extends AppCompatActivity {
@@ -24,11 +25,12 @@ public class Register extends AppCompatActivity {
     Button SignUp;
     DatabaseReference databaseGymOwner;
     int role;
+    DataProcessor dataProcessor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
+        dataProcessor=new DataProcessor(this);
         databaseGymOwner = FirebaseDatabase.getInstance().getReference(GYM_OWNER);
         fname = findViewById(R.id.first);
         lname = findViewById(R.id.last);
@@ -99,6 +101,8 @@ public class Register extends AppCompatActivity {
                              GymOwnerData gymOwnerData = new GymOwnerData(id, FnameEntered, LnameEntered,
                             EmailEntered, PasswordEntered, PhoneEntered,role);
                              databaseGymOwner.child(id).setValue(gymOwnerData);
+
+                            // dataProcessor.setInt(ROLE,role);
                     Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
                     finish();
                 }else{

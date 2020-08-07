@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/gymsignup"
     tools:context=".Activities.AddGymDataActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
+
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="129dp"
+        android:text="Gym Details"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/gym_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Gym Details" />
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Gym Name"
         android:inputType="textPersonName"
@@ -35,7 +38,6 @@
         android:textColorHint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/gym_address"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -45,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Gym Address"
         android:inputType="textPersonName"
@@ -52,7 +55,6 @@
         android:textColorHint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/gym_url"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gym_name" />
 
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Gym Website URL"
         android:inputType="textPersonName"
@@ -69,7 +72,6 @@
         android:textColorHint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gym_address" />
 
@@ -79,6 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Contact person"
         android:inputType="textPersonName"
@@ -86,7 +89,6 @@
         android:textColorHint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/contact_no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gym_url" />
 
@@ -96,17 +98,33 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
         android:hint="Contact Number"
         android:inputType="number"
-
         android:textColor="@android:color/black"
         android:textColorHint="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/latling"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Description"
+
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latling" />
 
     <EditText
         android:id="@+id/latling"
@@ -114,27 +132,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_bg"
         android:ems="10"
+        android:focusable="false"
         android:hint="Gym Coordinates"
         android:inputType="textPersonName"
         android:textColor="@android:color/black"
         android:textColorHint="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/des"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_no" />
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="0dp"
+        android:layout_width="312dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
+        android:background="@drawable/button_bg"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/latling" />
+        app:layout_constraintTop_toBottomOf="@+id/des" />
 </androidx.constraintlayout.widget.ConstraintLayout>

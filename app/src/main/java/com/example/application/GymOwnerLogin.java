@@ -23,6 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import static com.example.application.Utils.Constants.FIRST_LOGIN_OWNER;
 import static com.example.application.Utils.Constants.GYM_OWNER;
+import static com.example.application.Utils.Constants.GYM_OWNER_ID;
+import static com.example.application.Utils.Constants.IS_LOGGEDIN;
 import static com.example.application.Utils.Constants.ROLE;
 
 public class GymOwnerLogin extends AppCompatActivity {
@@ -86,14 +88,20 @@ public class GymOwnerLogin extends AppCompatActivity {
                         GymOwnerData usersBean = user.getValue(GymOwnerData.class);
 
                         if (usersBean.getPassword().equals(Password.getText().toString().trim())) {
-                            if(dataProcessor.getBool(FIRST_LOGIN_OWNER)) {
+                            if(!dataProcessor.getBool(FIRST_LOGIN_OWNER)) {
+                                dataProcessor.setInt(ROLE,usersBean.getRole());
+                                dataProcessor.setStr(GYM_OWNER_ID,usersBean.getId());
+                                dataProcessor.setBool(IS_LOGGEDIN,true);
                                 Intent intent = new Intent(GymOwnerLogin.this, AddGymDataActivity.class);
                                 startActivity(intent);
-                                DataProcessor.setInt(ROLE,usersBean.getRole());
+
                             }else{
+                                dataProcessor.setInt(ROLE,usersBean.getRole());
+                                dataProcessor.setStr(GYM_OWNER_ID,usersBean.getId());
+                                dataProcessor.setBool(IS_LOGGEDIN,true);
                                 Intent intent = new Intent(GymOwnerLogin.this, GymOwnerProfileActivity.class);
                                 startActivity(intent);
-                                dataProcessor.setInt(ROLE,usersBean.getRole());
+
                             }
                         } else {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();

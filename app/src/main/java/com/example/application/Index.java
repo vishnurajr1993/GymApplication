@@ -2,22 +2,80 @@ package com.example.application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.application.Activities.AddGymDataActivity;
+import com.example.application.Activities.GymOwnerProfileActivity;
+import com.example.application.Models.GymDetails;
+import com.example.application.Utils.DataProcessor;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.example.application.Utils.Constants.FIRST_LOGIN_OWNER;
+import static com.example.application.Utils.Constants.GYM_DATA;
+import static com.example.application.Utils.Constants.GYM_OWNER_ID;
+import static com.example.application.Utils.Constants.IS_LOGGEDIN;
 import static com.example.application.Utils.Constants.ROLE;
 
 public class Index extends AppCompatActivity {
 
-
+    DataProcessor dp;
     Button cust,owner;
+    DatabaseReference databaseGym;
+    List<GymDetails> gymDetails;
+    boolean firstLoginOver=false;
+    private ProgressDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index2);
+        dp=new DataProcessor(this);
+        String gymownerId=dp.getStr(GYM_OWNER_ID);
+        final boolean isLogedIn=dp.getBool(IS_LOGGEDIN);
+        dialog = new ProgressDialog(this);
+        dialog.setMessage("Please wait.");
+        dialog.show();
+        gymDetails=new ArrayList<>();
+        databaseGym = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(gymownerId);
+        databaseGym.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                gymDetails.clear();
+                for(DataSnapshot d:dataSnapshot.getChildren()){
+                    GymDetails g=d.getValue(GymDetails.class);
+                    gymDetails.add(g);
+                }
+                if(!gymDetails.isEmpty()){
+                   firstLoginOver=true;
+                }
+                if(isLogedIn && firstLoginOver){
+                    startActivity(new Intent(Index.this, GymOwnerProfileActivity.class));
+                    finish();
+                }else if(isLogedIn && !firstLoginOver){
+                    startActivity(new Intent(Index.this, AddGymDataActivity.class));
+                    finish();
+                }
+                if (dialog.isShowing()) {
+                    dialog.dismiss();
+                }
+            }
 
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
         cust=findViewById(R.id.customer);
@@ -30,7 +88,7 @@ public class Index extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), Owner.class);
                 getIntent().putExtra(ROLE,0);
                 startActivity(i);
-
+                finish();
 
             }
         });
@@ -43,6 +101,7 @@ public class Index extends AppCompatActivity {
               Intent j = new Intent(getApplicationContext(),GymOwnerLogin.class);
               getIntent().putExtra(ROLE,0);
               startActivity(j);
+              finish();
           }
       });
     }
