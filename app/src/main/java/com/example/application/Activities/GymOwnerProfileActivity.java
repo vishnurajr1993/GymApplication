@@ -15,6 +15,7 @@ import com.example.application.Dialogs.AddGymServicesDialog;
 import com.example.application.Models.GymDetails;
 import com.example.application.Models.GymServiceDetails;
 import com.example.application.R;
+import com.example.application.Utils.CommonCallback;
 import com.example.application.Utils.DataProcessor;
 import com.example.application.Utils.ServicesRecyclerView;
 import com.example.application.Utils.SpacesItemDecoration;
@@ -26,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +69,7 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
                    name.setText(gymDetails.get(0).getGymName());
                    address.setText(gymDetails.get(0).getGymAddress());
                    contactno.setText(gymDetails.get(0).getContactNo());
+                   if(gymDetails.get(0).getWebsite()!=null)
                    url.setText(gymDetails.get(0).getWebsite());
                    if(!gymDetails.get(0).getDes().equals("")) {
                        desContainer.setVisibility(View.VISIBLE);
@@ -92,7 +95,14 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
                 }
                 if(!gymServiceDetailsList.isEmpty()){
                     ServicesRecyclerView servicesRecyclerView=new ServicesRecyclerView(gymServiceDetailsList,
-                            GymOwnerProfileActivity.this,getContentResolver());
+                            GymOwnerProfileActivity.this, new CommonCallback() {
+                        @Override
+                        public void adapterPosition(int position) {
+                            Intent intent=   new Intent(GymOwnerProfileActivity.this, ShowServiceActivity.class);
+                            intent.putExtra("list", (Serializable) gymServiceDetailsList.get(position));
+                            startActivity(intent);
+                        }
+                    });
                     recycleListView.setAdapter(servicesRecyclerView);
                 }
             }

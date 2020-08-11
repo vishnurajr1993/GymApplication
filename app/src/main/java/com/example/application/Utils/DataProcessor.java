@@ -33,7 +33,7 @@ public class DataProcessor {
 
     public static int getInt(String key) {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, 0);
-        return prefs.getInt(key, 0);
+        return prefs.getInt(key, 2);
     }
 
     public static void setStr(String key, String value) {

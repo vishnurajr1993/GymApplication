@@ -1,6 +1,8 @@
 package com.example.application.Models;
 
-public class GymDetails {
+import java.io.Serializable;
+
+public class GymDetails implements Serializable {
     public String id;
     public String ownerId;
     public String gymName;
@@ -9,6 +11,16 @@ public class GymDetails {
     public String contactPeson;
     public String contactNo;
     public String des;
+    public boolean selected;
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+    }
+
     public double lattitude;
     public double longitude;
     public GymDetails() {

@@ -16,8 +16,10 @@ import com.example.application.R;
 import com.example.application.Utils.DataProcessor;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -64,9 +66,9 @@ public class AddGymDataActivity extends AppCompatActivity {
                     gym_address.setError("Enter an Address");
                 }else if(coordinates.getText().toString().length()==0){
                     coordinates.setError("Select a Place");
-                }else if(website.getText().toString().length()==0){
+                }/*else if(website.getText().toString().length()==0){
                     website.setError("Enter a valid website URL");
-                }else if(contactPerson.getText().toString().length()==0){
+                }*/else if(contactPerson.getText().toString().length()==0){
                     contactPerson.setError("Enter a Name");
                 }else if(contactno.getText().toString().length()==0){
                     contactno.setError("Enter a contact Number");

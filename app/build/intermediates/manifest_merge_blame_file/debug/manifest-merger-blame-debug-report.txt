@@ -22,109 +22,225 @@
 14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 14-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:5-80
 14-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:22-77
-15
-16    <meta-data
-16-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-12:67
-17        android:name="com.google.android.geo.API_KEY"
-17-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-54
-18        android:value="AIzaSyAm5SI80r9u0dH1raFtYKryp3jT-XE4Y1A" />
-18-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-64
-19
-20    <!-- Include required permissions for Google Maps API to run. -->
-21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-21-->[com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:23:5-79
-21-->[com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:23:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:10:5-76
+15-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:10:22-73
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:25:22-76
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+21        android:required="true" />
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
 22
-23    <uses-feature
-23-->[com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:26:5-28:35
-24        android:glEsVersion="0x00020000"
-24-->[com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:27:9-41
-25        android:required="true" />
-25-->[com.google.android.gms:play-services-maps:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\88f7599e4418f4ca33cdf451df5102c7\jetified-play-services-maps-12.0.0\AndroidManifest.xml:28:9-32
-26
-27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-28
-29    <application
-29-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:5-37:19
-30        android:allowBackup="true"
+23    <application
+23-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-39:19
+24        android:allowBackup="true"
+24-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:13:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:9-54
+30        android:supportsRtl="true"
 30-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:15:9-35
-31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-31-->[androidx.core:core:1.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\7af9464903b8a503017df0a97e0258a2\core-1.0.1\AndroidManifest.xml:22:18-86
-32        android:debuggable="true"
-33        android:icon="@mipmap/ic_launcher"
-33-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:9-43
-34        android:label="@string/app_name"
-34-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:9-41
-35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:9-54
-36        android:supportsRtl="true"
-36-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:9-35
-37        android:testOnly="true"
-38        android:theme="@style/Theme.AppCompat.NoActionBar" >
-38-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:9-59
-39        <activity android:name="com.example.application.Activities.SplashScreen" >
-39-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:9-27:20
-39-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:19-58
-40            <intent-filter>
-40-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:22:13-26:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:17-69
-41-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:17-77
-43-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity android:name="com.example.application.Activities.AddGymDataActivity" />
-46-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:9-67
-46-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:19-64
-47        <activity android:name="com.example.application.Activities.GymOwnerProfileActivity" />
-47-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:9-72
-47-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:19-69
-48        <activity android:name="com.example.application.Owner" />
-48-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:9-43
-48-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:19-40
-49        <activity android:name="com.example.application.GymOwnerLogin" />
-49-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:9-51
-49-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:19-48
-50        <activity android:name="com.example.application.Index" >
-50-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:9-34:20
-50-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:19-40
-51        </activity>
-52        <activity android:name="com.example.application.Register" />
-52-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:9-46
-52-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:19-43
-53        <activity android:name="com.example.application.Dialogs.AddGymServicesDialog" />
-53-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:9-66
-53-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:19-63
-54
-55        <provider
-55-->[com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:8:9-12:39
-56            android:name="com.google.firebase.provider.FirebaseInitProvider"
-56-->[com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:9:13-77
-57            android:authorities="com.example.application.firebaseinitprovider"
-57-->[com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:10:13-72
-58            android:exported="false"
-58-->[com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:11:13-37
-59            android:initOrder="100" />
-59-->[com.google.firebase:firebase-common:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\afb07ae00a828a1c953ef7ab015eba09\jetified-firebase-common-12.0.0\AndroidManifest.xml:12:13-36
-60
-61        <activity
-61-->[com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:23:9-26:75
-62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-62-->[com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:24:13-79
-63            android:exported="false"
-63-->[com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:25:13-37
-64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-64-->[com.google.android.gms:play-services-base:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f86f57251159126ef1b95a5202a1e276\jetified-play-services-base-12.0.0\AndroidManifest.xml:26:13-72
+31        android:testOnly="true"
+32        android:theme="@style/Theme.AppCompat.NoActionBar" >
+32-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:9-59
+33        <activity android:name="com.example.application.Activities.ShowServiceActivity" />
+33-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:9-77
+33-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:19-65
+34        <activity android:name="com.example.application.Activities.GymListActivity" />
+34-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:9-64
+34-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:19-61
+35
+36        <meta-data
+36-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:9-22:71
+37            android:name="com.google.android.geo.API_KEY"
+37-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:13-58
+38            android:value="AIzaSyAm5SI80r9u0dH1raFtYKryp3jT-XE4Y1A" />
+38-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:22:13-68
+39
+40        <activity android:name="com.example.application.Activities.MapActivity" />
+40-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:24:9-60
+40-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:24:19-57
+41        <activity android:name="com.example.application.Activities.SplashScreen" >
+41-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:9-31:20
+41-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:19-58
+42            <intent-filter>
+42-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:26:13-30:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:27:17-69
+43-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:27:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:17-77
+45-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.example.application.Activities.AddGymDataActivity" />
+48-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:9-67
+48-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:32:19-64
+49        <activity android:name="com.example.application.Activities.GymOwnerProfileActivity" />
+49-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:33:9-72
+49-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:33:19-69
+50        <activity android:name="com.example.application.Owner" />
+50-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:9-43
+50-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:19-40
+51        <activity android:name="com.example.application.GymOwnerLogin" />
+51-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:9-51
+51-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:19-48
+52        <activity android:name="com.example.application.Index" />
+52-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:9-43
+52-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:19-40
+53        <activity android:name="com.example.application.Register" />
+53-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:9-46
+53-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:19-43
+54        <activity android:name="com.example.application.Dialogs.AddGymServicesDialog" />
+54-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:9-66
+54-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:19-63
+55        <activity
+55-->[com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:27:9-29:72
+56            android:name="com.karumi.dexter.DexterActivity"
+56-->[com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:28:13-60
+57            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+57-->[com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:29:13-69
+58        <activity
+58-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:14:9-20:20
+59            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+59-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:15:13-91
+60            android:exported="false"
+60-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:16:13-37
+61            android:label="@string/places_autocomplete_label"
+61-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:17:13-62
+62            android:theme="@style/PlacesAutocompleteOverlay"
+62-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:18:13-61
+63            android:windowSoftInputMode="adjustResize" >
+63-->[com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:19:13-55
+64        </activity>
 65
-66        <meta-data
-66-->[com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:23:9-25:69
-67            android:name="com.google.android.gms.version"
-67-->[com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:24:13-58
-68            android:value="@integer/google_play_services_version" />
-68-->[com.google.android.gms:play-services-basement:12.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\4bf8dd488f9cfe6aa2235303c6dd1ded\jetified-play-services-basement-12.0.0\AndroidManifest.xml:25:13-66
-69    </application>
-70
-71</manifest>
+66        <service
+66-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:29:9-33:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:29:18-89
+68            android:exported="false" >
+68-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:35:13-37
+69            <meta-data
+69-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:30:13-32:85
+70                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+70-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:31:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-database:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\af2c0859f1eb4135c5381f45430b1c95\jetified-firebase-database-17.0.0\AndroidManifest.xml:32:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ddd894bb33bbed66679dd8be869bc84f\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+73                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+73-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ddd894bb33bbed66679dd8be869bc84f\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\ddd894bb33bbed66679dd8be869bc84f\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:36:13-38:85
+76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+76-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
+78        </service>
+79
+80        <activity
+80-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
+81            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+81-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:25:13-85
+82            android:excludeFromRecents="true"
+82-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:26:13-46
+83            android:exported="true"
+83-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:27:13-36
+84            android:launchMode="singleTask"
+84-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:28:13-44
+85            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+85-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:29:13-102
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
+86-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\c94bdd1bca901fd4666e5b6cb23cccee\jetified-firebase-auth-17.0.0\AndroidManifest.xml:30:13-72
+87        <uses-library
+87-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+88            android:name="org.apache.http.legacy"
+88-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+89            android:required="false" />
+89-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+95
+96        <provider
+96-->[com.google.firebase:firebase-common:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\080c9ee3c0d2f1a4922784cdbd6ad526\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+97            android:name="com.google.firebase.provider.FirebaseInitProvider"
+97-->[com.google.firebase:firebase-common:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\080c9ee3c0d2f1a4922784cdbd6ad526\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+98            android:authorities="com.example.application.firebaseinitprovider"
+98-->[com.google.firebase:firebase-common:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\080c9ee3c0d2f1a4922784cdbd6ad526\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+99            android:exported="false"
+99-->[com.google.firebase:firebase-common:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\080c9ee3c0d2f1a4922784cdbd6ad526\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+100            android:initOrder="100" />
+100-->[com.google.firebase:firebase-common:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\080c9ee3c0d2f1a4922784cdbd6ad526\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+101
+102        <meta-data
+102-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c962c3196c421898273c3c585673e57\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+103            android:name="com.google.android.gms.version"
+103-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c962c3196c421898273c3c585673e57\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+104            android:value="@integer/google_play_services_version" />
+104-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\1c962c3196c421898273c3c585673e57\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+105
+106        <service
+106-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:29:9-35:19
+107            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+107-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:30:13-103
+108            android:exported="false" >
+108-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:31:13-37
+109            <meta-data
+109-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:32:13-34:39
+110                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+110-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:33:17-94
+111                android:value="cct" />
+111-->[com.google.android.datatransport:transport-backend-cct:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\3744129df713240eb43dc9c4e24bc114\transport-backend-cct-2.1.0\AndroidManifest.xml:34:17-36
+112        </service>
+113        <service
+113-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:26:9-30:19
+114            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+114-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:27:13-117
+115            android:exported="false"
+115-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:28:13-37
+116            android:permission="android.permission.BIND_JOB_SERVICE" >
+116-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:29:13-69
+117        </service>
+118
+119        <receiver
+119-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:32:9-34:40
+120            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+120-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:33:13-132
+121            android:exported="false" />
+121-->[com.google.android.datatransport:transport-runtime:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\bd5580d1841dcb8f2acc51ea8b9ca127\transport-runtime-2.1.0\AndroidManifest.xml:34:13-37
+122
+123        <provider
+123-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+124            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+124-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+125            android:authorities="com.example.application.lifecycle-process"
+125-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+126            android:exported="false"
+126-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+127            android:multiprocess="true" />
+127-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+128    </application>
+129
+130</manifest>
