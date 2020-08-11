@@ -4,6 +4,7 @@ ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.x
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-41:12
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-41:12
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-41:12
+MERGED from [com.github.whinc:ratingbar:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f7881d8e77b7d57953d487d9c4eb8592\jetified-ratingbar-1.1.1\AndroidManifest.xml:2:1-16:12
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:2:1-23:12
@@ -113,6 +114,8 @@ ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.x
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:22-77
 application
 ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-39:19
+MERGED from [com.github.whinc:ratingbar:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f7881d8e77b7d57953d487d9c4eb8592\jetified-ratingbar-1.1.1\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.whinc:ratingbar:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f7881d8e77b7d57953d487d9c4eb8592\jetified-ratingbar-1.1.1\AndroidManifest.xml:11:5-14:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -247,6 +250,8 @@ uses-sdk
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
+MERGED from [com.github.whinc:ratingbar:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f7881d8e77b7d57953d487d9c4eb8592\jetified-ratingbar-1.1.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.whinc:ratingbar:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\f7881d8e77b7d57953d487d9c4eb8592\jetified-ratingbar-1.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:22:5-24:41
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:22:5-24:41
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:20:5-44

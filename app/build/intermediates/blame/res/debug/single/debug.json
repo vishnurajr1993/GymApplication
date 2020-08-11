@@ -1028,16 +1028,16 @@
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\fd5af5ed399c2fe2609d80691d79245e\\material-1.0.0\\res\\color-v23\\design_tint_password_toggle.xml"
     },
     {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_viewpager_border.xml.flat",
+        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\drawable\\viewpager_border.xml"
+    },
+    {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\85843906538799809b860890e03c3306\\appcompat-1.0.2\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_fab_bg_mini.png.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\90b84e67fca37b1ae6b07489b7ca6bf6\\jetified-floatingactionbutton-1.10.1\\res\\drawable-hdpi-v4\\fab_bg_mini.png"
-    },
-    {
-        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_viewpager_border.xml.flat",
-        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\drawable\\viewpager_border.xml"
     },
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_clear_grey600_24.png.flat",
@@ -1744,6 +1744,10 @@
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\d9f25cb840646c5cd61c78566c01c4db\\places-2.3.0\\res\\layout\\places_autocomplete_prediction.xml"
     },
     {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fill.png.flat",
+        "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\f7881d8e77b7d57953d487d9c4eb8592\\jetified-ratingbar-1.1.1\\res\\drawable\\fill.png"
+    },
+    {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\85843906538799809b860890e03c3306\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -1934,6 +1938,10 @@
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\85843906538799809b860890e03c3306\\appcompat-1.0.2\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_empty.png.flat",
+        "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\f7881d8e77b7d57953d487d9c4eb8592\\jetified-ratingbar-1.1.1\\res\\drawable\\empty.png"
     },
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",

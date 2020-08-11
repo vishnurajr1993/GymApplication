@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,7 @@ import static com.example.application.Utils.Constants.GYM_ID;
 import static com.example.application.Utils.Constants.GYM_OWNER;
 import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 import static com.example.application.Utils.Constants.GYM_SERVICES;
+import static com.example.application.Utils.Constants.ROLE;
 
 public class GymOwnerProfileActivity extends AppCompatActivity {
     DatabaseReference databaseGym,databaseServices;
@@ -46,13 +48,23 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
     LinearLayout desContainer;
    RecyclerView recycleListView;
     FloatingActionButton fab;
+    String gymownerId;
+     String gymId;
+    int role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gym_owner_profile);
         dp=new DataProcessor(this);
-        final String gymownerId=dp.getStr(GYM_OWNER_ID);
-        final String gymId=dp.getStr(GYM_ID);
+         role=dp.getInt(ROLE);
+        if(role==0) {
+            gymownerId = dp.getStr(GYM_OWNER_ID);
+            gymId = dp.getStr(GYM_ID);
+        }else{
+            Intent intent=getIntent();
+            gymownerId=intent.getStringExtra(GYM_OWNER_ID);
+            gymId=intent.getStringExtra(GYM_ID);
+        }
         gymDetails=new ArrayList<>();
         databaseGym = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(gymownerId);
         databaseServices = FirebaseDatabase.getInstance().getReference(GYM_SERVICES).child(gymId);
@@ -114,7 +126,7 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
         });
 
     }
-
+    @SuppressLint("RestrictedApi")
     private void initviews() {
         name=findViewById(R.id.name);
         address=findViewById(R.id.address);
@@ -127,7 +139,11 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
         recycleListView.setLayoutManager(new GridLayoutManager(this, 2));
         int spacingInPixels = 25;
         recycleListView.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
+        if(role==1){
+            fab.setVisibility(View.GONE);
+        }
     }
+
 
     @Override
     protected void onResume() {
@@ -138,5 +154,6 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
             startActivity(new Intent(GymOwnerProfileActivity.this, AddGymServicesDialog.class));
             }
         });
+
     }
 }

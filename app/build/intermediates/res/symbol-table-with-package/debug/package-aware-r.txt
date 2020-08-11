@@ -495,12 +495,19 @@ attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
+attr rb_click_rating
 attr rb_color
+attr rb_count
 attr rb_duration
+attr rb_empty
+attr rb_fill
+attr rb_max_count
 attr rb_radius
 attr rb_rippleAmount
 attr rb_scale
+attr rb_space
 attr rb_strokeWidth
+attr rb_touch_rating
 attr rb_type
 attr reverseLayout
 attr rippleColor
@@ -1591,8 +1598,10 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext_bg
+drawable empty
 drawable fab_bg_mini
 drawable fab_bg_normal
+drawable fill
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gym
@@ -1744,6 +1753,7 @@ id clip_horizontal
 id clip_vertical
 id cls
 id collapseActionView
+id cont
 id contact
 id contact_no
 id contactno
@@ -2802,6 +2812,7 @@ styleable MenuView android_windowAnimationStyle android_itemTextAppearance andro
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable RatingBar rb_click_rating rb_count rb_empty rb_fill rb_max_count rb_space rb_touch_rating
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable RippleBackground rb_color rb_duration rb_radius rb_rippleAmount rb_scale rb_strokeWidth rb_type

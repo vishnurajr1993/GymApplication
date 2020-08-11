@@ -19,8 +19,12 @@ import android.widget.Toast;
 import com.example.application.Models.UserDetails;
 import com.example.application.Utils.*;
 import com.example.application.Models.GymOwnerData;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 import java.util.regex.Matcher;
@@ -64,10 +68,10 @@ public class Register extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                String FnameEntered = fname.getText().toString();
-                String LnameEntered = lname.getText().toString();
-                String PhoneEntered = phone.getText().toString();
-                String EmailEntered = email.getText().toString();
+                final String FnameEntered = fname.getText().toString();
+                final String LnameEntered = lname.getText().toString();
+                final String PhoneEntered = phone.getText().toString();
+                final String EmailEntered = email.getText().toString();
                 final String PasswordEntered = password.getText().toString();
                 String ReEntered = repassword.getText().toString();
 
@@ -119,31 +123,75 @@ public class Register extends AppCompatActivity {
                     return;
                 }
                 if(role==0){
-                String id = databaseGymOwner.push().getKey();
+
                 if (FnameEntered.length()>0 && LnameEntered .length()>0 && EmailEntered.length()>0 &&
                         PasswordEntered.length()>0&& PhoneEntered.length()>0) {
-                             GymOwnerData gymOwnerData = new GymOwnerData(id, FnameEntered, LnameEntered,
-                            EmailEntered, PasswordEntered, PhoneEntered,role);
-                             databaseGymOwner.child(id).setValue(gymOwnerData);
+                    /*********************************************************/
 
-                            // dataProcessor.setInt(ROLE,role);
-                    Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
-                    finish();
+                    Query query = databaseGymOwner.orderByChild("userName").equalTo(EmailEntered);
+                    ValueEventListener eventListener = new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            if(!dataSnapshot.exists()) {
+                                //create new user
+                                String id = databaseGymOwner.push().getKey();
+                                GymOwnerData gymOwnerData = new GymOwnerData(id, FnameEntered, LnameEntered,
+                                        EmailEntered, PasswordEntered, PhoneEntered,role);
+                                databaseGymOwner.child(id).setValue(gymOwnerData);
+
+                                // dataProcessor.setInt(ROLE,role);
+                                Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
+                                finish();
+                            }else{
+                                Toast.makeText(Register.this, "User exists", Toast.LENGTH_SHORT).show();
+
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            // Log.d(TAG, databaseError.getMessage()); //Don't ignore errors!
+                        }
+                    };
+                    query.addListenerForSingleValueEvent(eventListener);
+                    /*********************************************************/
+
                 }else{
                     Toast.makeText(Register.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
 
             }else if(role==1){
-                    String id = databaseUser.push().getKey();
+
                     if (FnameEntered.length()>0 && LnameEntered .length()>0 && EmailEntered.length()>0 &&
                             PasswordEntered.length()>0&& PhoneEntered.length()>0) {
-                        UserDetails userDetails = new UserDetails(id, FnameEntered, LnameEntered,
-                                EmailEntered, PasswordEntered, PhoneEntered,role);
-                        databaseUser.child(id).setValue(userDetails);
+                        Query query = databaseUser.orderByChild("userName").equalTo(EmailEntered);
+                        ValueEventListener eventListener = new ValueEventListener() {
+                            @Override
+                            public void onDataChange(DataSnapshot dataSnapshot) {
+                                if(!dataSnapshot.exists()) {
+                                    //create new user
+                                    String id = databaseUser.push().getKey();
+                                    UserDetails userDetails = new UserDetails(id, FnameEntered, LnameEntered,
+                                            EmailEntered, PasswordEntered, PhoneEntered,role);
+                                    databaseUser.child(id).setValue(userDetails);
 
-                        // dataProcessor.setInt(ROLE,role);
-                        Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
-                        finish();
+                                    // dataProcessor.setInt(ROLE,role);
+                                    Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
+                                    finish();
+
+                                }else{
+                                    Toast.makeText(Register.this, "User exists", Toast.LENGTH_SHORT).show();
+
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(DatabaseError databaseError) {
+                                // Log.d(TAG, databaseError.getMessage()); //Don't ignore errors!
+                            }
+                        };
+                        query.addListenerForSingleValueEvent(eventListener);
+
                     }else{
                         Toast.makeText(Register.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
