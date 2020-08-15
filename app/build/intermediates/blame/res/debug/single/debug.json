@@ -384,6 +384,10 @@
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\9b282167d5edf2ce15b1570bf9b055c0\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_compare_btnbg.xml.flat",
+        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\drawable\\compare_btnbg.xml"
+    },
+    {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\9aa43e4d859846d255e0c2916968f517\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
@@ -470,6 +474,10 @@
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_bg_a.jpg.flat",
         "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\drawable-xxxhdpi\\bg_a.jpg"
+    },
+    {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_sevice_iem.xml.flat",
+        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\layout\\sevice_iem.xml"
     },
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
@@ -1696,6 +1704,10 @@
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\85843906538799809b860890e03c3306\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_compare_gym.xml.flat",
+        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\layout\\activity_compare_gym.xml"
+    },
+    {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\85843906538799809b860890e03c3306\\appcompat-1.0.2\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
@@ -2594,6 +2606,10 @@
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_history_black_48dp.png.flat",
         "source": "C:\\Users\\vinu\\.gradle\\caches\\transforms-2\\files-2.1\\075f6fd6a78b711f147a39199e9f6563\\jetified-MaterialSearchBar-0.8.1\\res\\drawable-xxhdpi-v4\\ic_history_black_48dp.png"
+    },
+    {
+        "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow.xml.flat",
+        "source": "F:\\vishnu\\gymFinder\\Application-master\\app\\src\\main\\res\\drawable\\ic_arrow.xml"
     },
     {
         "merged": "F:\\vishnu\\gymFinder\\Application-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",

@@ -81,6 +81,7 @@ public class Index extends AppCompatActivity {
         }else if(role==1){
             if(dp.getBool(IS_LOGGEDIN)){
                 startActivity(new Intent(this, MapActivity.class));
+                finish();
             }
             if (dialog.isShowing()) {
                 dialog.dismiss();

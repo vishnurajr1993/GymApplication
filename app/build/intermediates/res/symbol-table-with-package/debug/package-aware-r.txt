@@ -725,6 +725,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color compare
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1591,6 +1592,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable compare_btnbg
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1609,6 +1611,7 @@ drawable gymlogo
 drawable gympage
 drawable gymsignup
 drawable ic_add_black_24dp
+drawable ic_arrow
 drawable ic_arrow_left_black_48dp
 drawable ic_back_animated
 drawable ic_back_vector
@@ -1728,12 +1731,15 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addA
+id addB
 id address
 id adjust_height
 id adjust_width
 id alertTitle
 id all
 id always
+id ar
 id async
 id auto
 id barrier
@@ -1746,6 +1752,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id check
 id checkbox
 id chronometer
 id clas
@@ -1753,6 +1760,9 @@ id clip_horizontal
 id clip_vertical
 id cls
 id collapseActionView
+id compare
+id conA
+id conB
 id cont
 id contact
 id contact_no
@@ -1858,6 +1868,8 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id name
+id nameA
+id nameB
 id navigation_header_container
 id never
 id none
@@ -1867,6 +1879,8 @@ id notification_main_column
 id notification_main_column_container
 id outline
 id owner
+id ownerA
+id ownerB
 id packed
 id parallax
 id parent
@@ -1915,7 +1929,11 @@ id progress_circular
 id progress_horizontal
 id radio
 id rating
+id ratingA
+id ratingB
 id recycler
+id recyclerA
+id recyclerB
 id recyclerView
 id relativeLayout
 id repassword
@@ -2005,6 +2023,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toolbar
+id toolbara
 id toolbars
 id top
 id topPanel
@@ -2022,6 +2041,8 @@ id useLogo
 id viewPager
 id view_offset_helper
 id visible
+id webA
+id webB
 id wide
 id withText
 id wrap
@@ -2079,6 +2100,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_gym_data
+layout activity_compare_gym
 layout activity_gym_list
 layout activity_gym_owner_profile
 layout activity_index2
@@ -2138,6 +2160,7 @@ layout searchbar
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sevice_iem
 layout support_simple_spinner_dropdown_item
 layout toolbar
 layout viewpager_item

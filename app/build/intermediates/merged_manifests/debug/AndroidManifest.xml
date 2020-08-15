@@ -30,6 +30,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity android:name="com.example.application.Activities.CompareGymActivity" />
         <activity android:name="com.example.application.Activities.ShowServiceActivity" />
         <activity android:name="com.example.application.Activities.GymListActivity" />
 

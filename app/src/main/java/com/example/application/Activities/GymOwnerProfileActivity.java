@@ -9,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import com.example.application.Dialogs.AddGymServicesDialog;
 import com.example.application.Models.GymDetails;
 import com.example.application.Models.GymServiceDetails;
 import com.example.application.R;
+import com.example.application.Utils.CommomDataArea;
 import com.example.application.Utils.CommonCallback;
 import com.example.application.Utils.DataProcessor;
 import com.example.application.Utils.ServicesRecyclerView;
@@ -51,6 +53,9 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
     String gymownerId;
      String gymId;
     int role;
+    TextView title;
+    ImageView logout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +70,16 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
             gymownerId=intent.getStringExtra(GYM_OWNER_ID);
             gymId=intent.getStringExtra(GYM_ID);
         }
+        title=findViewById(R.id.title);
+        logout=findViewById(R.id.logout);
+        title.setText("Gym Owner Profole");
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CommomDataArea.logOut(GymOwnerProfileActivity.this);
+                finish();
+            }
+        });
         gymDetails=new ArrayList<>();
         databaseGym = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(gymownerId);
         databaseServices = FirebaseDatabase.getInstance().getReference(GYM_SERVICES).child(gymId);

@@ -2,6 +2,7 @@ package com.example.application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.example.application.Activities.MapActivity;
 import com.example.application.Models.GymDetails;
 import com.example.application.Models.GymOwnerData;
 import com.example.application.Models.UserDetails;
+import com.example.application.Utils.AESCrypt;
 import com.example.application.Utils.DataProcessor;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -90,22 +92,32 @@ public class GymOwnerLogin extends AppCompatActivity {
     }
 
     private void firebaseLoginSession() {
+        dialog = new ProgressDialog(GymOwnerLogin.this);
+        dialog.setMessage("Please wait.");
+        dialog.show();
         Query query = databaseGymOwner.orderByChild("userName").equalTo(Email.getText().toString());
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dialog.isShowing())
+                    dialog.dismiss();
                 if (dataSnapshot.exists()) {
                     // dataSnapshot is the "issue" node with all children with id 0
 
                     for (DataSnapshot user : dataSnapshot.getChildren()) {
                         // do something with the individual "issues"
                         GymOwnerData usersBean = user.getValue(GymOwnerData.class);
+                        try {
+                            String pwd= AESCrypt.decrypt(usersBean.getPassword());
 
                         if (usersBean.getPassword().equals(Password.getText().toString().trim())) {
                             checkForFirstUser(usersBean.getId(),usersBean);
 
                         } else {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();
+                        }
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 } else {
@@ -115,7 +127,8 @@ public class GymOwnerLogin extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                if (dialog.isShowing())
+                    dialog.dismiss();
             }
         });
     }
@@ -140,14 +153,14 @@ public class GymOwnerLogin extends AppCompatActivity {
                     dataProcessor.setBool(IS_LOGGEDIN,true);
                     Intent intent = new Intent(GymOwnerLogin.this, AddGymDataActivity.class);
                     startActivity(intent);
-
+                    finish();
                 }else{
                     dataProcessor.setInt(ROLE,usersBean.getRole());
                     dataProcessor.setStr(GYM_OWNER_ID,usersBean.getId());
                     dataProcessor.setBool(IS_LOGGEDIN,true);
                     Intent intent = new Intent(GymOwnerLogin.this, GymOwnerProfileActivity.class);
                     startActivity(intent);
-
+                    finish();
                 }
             }
 
@@ -157,17 +170,25 @@ public class GymOwnerLogin extends AppCompatActivity {
             }
         });
     }
+    ProgressDialog dialog;
     private void firebaseUserLogin(){
+        dialog = new ProgressDialog(GymOwnerLogin.this);
+        dialog.setMessage("Please wait.");
+        dialog.show();
         Query query = databaseUser.orderByChild("userName").equalTo(Email.getText().toString());
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dialog.isShowing())
+                    dialog.dismiss();
                 if (dataSnapshot.exists()) {
                     // dataSnapshot is the "issue" node with all children with id 0
 
                     for (DataSnapshot user : dataSnapshot.getChildren()) {
                         // do something with the individual "issues"
                         UserDetails usersBean = user.getValue(UserDetails.class);
+                        try {
+                            String pwd= AESCrypt.decrypt(usersBean.getPassword());
 
                         if (usersBean.getPassword().equals(Password.getText().toString().trim())) {
 
@@ -177,10 +198,13 @@ public class GymOwnerLogin extends AppCompatActivity {
                                 dataProcessor.setStr(USER_ID,usersBean.getId());
                                 Intent intent = new Intent(GymOwnerLogin.this, MapActivity.class);
                                 startActivity(intent);
-
+                                finish();
 
                         } else {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();
+                        }
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 } else {
@@ -190,7 +214,8 @@ public class GymOwnerLogin extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                if (dialog.isShowing())
+                    dialog.dismiss();
             }
         });
     }

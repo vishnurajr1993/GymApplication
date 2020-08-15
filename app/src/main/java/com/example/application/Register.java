@@ -3,6 +3,7 @@ package com.example.application;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -37,7 +38,7 @@ import static com.example.application.Utils.Constants.USER_DETAILS;
 
 public class Register extends AppCompatActivity {
 
-
+    ProgressDialog dialog;
     EditText fname, lname, phone, email, password, repassword;
     Button SignUp;
     DatabaseReference databaseGymOwner,databaseUser;
@@ -123,7 +124,9 @@ public class Register extends AppCompatActivity {
                     return;
                 }
                 if(role==0){
-
+                    dialog = new ProgressDialog(Register.this);
+                    dialog.setMessage("Please wait.");
+                    dialog.show();
                 if (FnameEntered.length()>0 && LnameEntered .length()>0 && EmailEntered.length()>0 &&
                         PasswordEntered.length()>0&& PhoneEntered.length()>0) {
                     /*********************************************************/
@@ -132,16 +135,24 @@ public class Register extends AppCompatActivity {
                     ValueEventListener eventListener = new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
+                            if (dialog.isShowing())
+                                dialog.dismiss();
                             if(!dataSnapshot.exists()) {
                                 //create new user
                                 String id = databaseGymOwner.push().getKey();
+                                try {
+                                    String pwd= AESCrypt.encrypt(PasswordEntered);
+
                                 GymOwnerData gymOwnerData = new GymOwnerData(id, FnameEntered, LnameEntered,
-                                        EmailEntered, PasswordEntered, PhoneEntered,role);
+                                        EmailEntered, pwd, PhoneEntered,role);
                                 databaseGymOwner.child(id).setValue(gymOwnerData);
 
                                 // dataProcessor.setInt(ROLE,role);
                                 Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
                                 finish();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
                             }else{
                                 Toast.makeText(Register.this, "User exists", Toast.LENGTH_SHORT).show();
 
@@ -151,6 +162,8 @@ public class Register extends AppCompatActivity {
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
                             // Log.d(TAG, databaseError.getMessage()); //Don't ignore errors!
+                            if (dialog.isShowing())
+                                dialog.dismiss();
                         }
                     };
                     query.addListenerForSingleValueEvent(eventListener);
@@ -161,23 +174,33 @@ public class Register extends AppCompatActivity {
                 }
 
             }else if(role==1){
-
+                    dialog = new ProgressDialog(Register.this);
+                    dialog.setMessage("Please wait.");
+                    dialog.show();
                     if (FnameEntered.length()>0 && LnameEntered .length()>0 && EmailEntered.length()>0 &&
                             PasswordEntered.length()>0&& PhoneEntered.length()>0) {
                         Query query = databaseUser.orderByChild("userName").equalTo(EmailEntered);
                         ValueEventListener eventListener = new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
+                                if (dialog.isShowing())
+                                    dialog.dismiss();
                                 if(!dataSnapshot.exists()) {
                                     //create new user
+                                    try {
+                                        String pwd= AESCrypt.encrypt(PasswordEntered);
+
                                     String id = databaseUser.push().getKey();
                                     UserDetails userDetails = new UserDetails(id, FnameEntered, LnameEntered,
-                                            EmailEntered, PasswordEntered, PhoneEntered,role);
+                                            EmailEntered, pwd, PhoneEntered,role);
                                     databaseUser.child(id).setValue(userDetails);
 
                                     // dataProcessor.setInt(ROLE,role);
                                     Toast.makeText(Register.this, "Signed up successfully", Toast.LENGTH_SHORT).show();
                                     finish();
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
 
                                 }else{
                                     Toast.makeText(Register.this, "User exists", Toast.LENGTH_SHORT).show();
@@ -188,6 +211,8 @@ public class Register extends AppCompatActivity {
                             @Override
                             public void onCancelled(DatabaseError databaseError) {
                                 // Log.d(TAG, databaseError.getMessage()); //Don't ignore errors!
+                                if (dialog.isShowing())
+                                    dialog.dismiss();
                             }
                         };
                         query.addListenerForSingleValueEvent(eventListener);
