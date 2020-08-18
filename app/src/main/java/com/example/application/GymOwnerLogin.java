@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.application.Activities.AddGymDataActivity;
+import com.example.application.Activities.ForgetPasswordActivity;
 import com.example.application.Activities.GymOwnerProfileActivity;
 import com.example.application.Activities.MapActivity;
 import com.example.application.Models.GymDetails;
@@ -19,6 +21,7 @@ import com.example.application.Models.GymOwnerData;
 import com.example.application.Models.UserDetails;
 import com.example.application.Utils.AESCrypt;
 import com.example.application.Utils.DataProcessor;
+import com.example.application.Utils.SendMail;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,21 +32,24 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 import static com.example.application.Utils.Constants.GYM_DATA;
 import static com.example.application.Utils.Constants.GYM_OWNER;
 import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 import static com.example.application.Utils.Constants.IS_LOGGEDIN;
 import static com.example.application.Utils.Constants.ROLE;
+import static com.example.application.Utils.Constants.TOKEN;
 import static com.example.application.Utils.Constants.USER_DETAILS;
 import static com.example.application.Utils.Constants.USER_ID;
+import static com.example.application.Utils.Constants.USER_NAME;
 
 public class GymOwnerLogin extends AppCompatActivity {
 
 
     EditText Email, Password;
     Button SignIn;
-    TextView SignUp;
+    TextView SignUp,forget;
     DatabaseReference databaseGymOwner,databaseUser,databaseGym;
     int role;
     DataProcessor dataProcessor;
@@ -55,6 +61,7 @@ public class GymOwnerLogin extends AppCompatActivity {
         databaseUser = FirebaseDatabase.getInstance().getReference(USER_DETAILS);
         Email = findViewById(R.id.emailentered);
         Password = findViewById(R.id.passwordentered);
+        forget = findViewById(R.id.forget);
         SignUp = findViewById(R.id.signupbutton);
         SignIn = findViewById(R.id.signinbutton);
         dataProcessor=new DataProcessor(this);
@@ -77,7 +84,15 @@ public class GymOwnerLogin extends AppCompatActivity {
             }
         });
 
-
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(role==1)
+                    customerPasswordReset();
+                else
+                    ownerPasswordReset();
+            }
+        });
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,6 +106,39 @@ public class GymOwnerLogin extends AppCompatActivity {
         });
     }
 
+    private void customerPasswordReset() {
+
+    }
+private void ownerPasswordReset(){
+    Random r = new Random();
+    String randomNumber = String.format("%04d", r.nextInt(1001));
+    dataProcessor.setStr(TOKEN,randomNumber);
+    if (Email.getText().toString().length() == 0) {
+        Email.setError("Enter a valid Email");
+    }else{
+        sendEmail("Saurabh's Gym App Password Reset Token",
+                "Hi, \n \nYou recently requested to change your password for " +
+                "Saurabh's Gym App.And the token for resetting your password is " +
+                        ""+ Html.fromHtml("<font><b>" + randomNumber + "</b></font>"
+                ));
+        Intent intent=new Intent(GymOwnerLogin.this, ForgetPasswordActivity.class);
+        intent.putExtra(ROLE,role);
+        intent.putExtra(USER_NAME,Email.getText().toString());
+        startActivity(intent);
+    }
+
+}
+    private void sendEmail(String subject,String message) {
+        //Getting content for email
+        String email = Email.getText().toString().trim();
+
+
+        //Creating SendMail object
+        SendMail sm = new SendMail(this, email, subject, message);
+
+        //Executing sendmail to send email
+        sm.execute();
+    }
     private void firebaseLoginSession() {
         dialog = new ProgressDialog(GymOwnerLogin.this);
         dialog.setMessage("Please wait.");
@@ -110,13 +158,14 @@ public class GymOwnerLogin extends AppCompatActivity {
                         try {
                             String pwd= AESCrypt.decrypt(usersBean.getPassword());
 
-                        if (usersBean.getPassword().equals(Password.getText().toString().trim())) {
+                        if (pwd.equals(Password.getText().toString().trim())) {
                             checkForFirstUser(usersBean.getId(),usersBean);
 
                         } else {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();
                         }
                         } catch (Exception e) {
+                            Toast.makeText(GymOwnerLogin.this, "Something went wrong", Toast.LENGTH_LONG).show();
                             e.printStackTrace();
                         }
                     }
@@ -152,6 +201,7 @@ public class GymOwnerLogin extends AppCompatActivity {
                     dataProcessor.setStr(GYM_OWNER_ID,usersBean.getId());
                     dataProcessor.setBool(IS_LOGGEDIN,true);
                     Intent intent = new Intent(GymOwnerLogin.this, AddGymDataActivity.class);
+                    intent.putExtra("from","A");
                     startActivity(intent);
                     finish();
                 }else{
@@ -190,7 +240,7 @@ public class GymOwnerLogin extends AppCompatActivity {
                         try {
                             String pwd= AESCrypt.decrypt(usersBean.getPassword());
 
-                        if (usersBean.getPassword().equals(Password.getText().toString().trim())) {
+                        if (pwd.equals(Password.getText().toString().trim())) {
 
                                 dataProcessor.setInt(ROLE,usersBean.getRole());
                                 //dataProcessor.setStr(GYM_OWNER_ID,usersBean.getId());
@@ -204,6 +254,7 @@ public class GymOwnerLogin extends AppCompatActivity {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();
                         }
                         } catch (Exception e) {
+                            Toast.makeText(GymOwnerLogin.this, "Something went wrong", Toast.LENGTH_LONG).show();
                             e.printStackTrace();
                         }
                     }

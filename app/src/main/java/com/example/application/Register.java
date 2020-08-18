@@ -120,7 +120,7 @@ public class Register extends AppCompatActivity {
 */
 
                 if (!PasswordEntered.equals(ReEntered)) {
-                    Toast.makeText(Register.this, "password doesnt match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Register.this, "password doesn't match", Toast.LENGTH_LONG).show();
                     return;
                 }
                 if(role==0){

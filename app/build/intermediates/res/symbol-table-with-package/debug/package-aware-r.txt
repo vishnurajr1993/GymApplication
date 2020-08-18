@@ -1617,6 +1617,7 @@ drawable ic_back_animated
 drawable ic_back_vector
 drawable ic_close_black_48dp
 drawable ic_dots_vertical_black_48dp
+drawable ic_edit_black_24dp
 drawable ic_history_black_48dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1790,6 +1791,7 @@ id dimensions
 id direct
 id disableHome
 id down
+id edit
 id edit_query
 id email
 id emailentered
@@ -1814,6 +1816,7 @@ id first
 id fixed
 id fmenu
 id forever
+id forget
 id ghost_view
 id glide_custom_view_target_tag
 id gone
@@ -1831,6 +1834,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imgCont
 id info
 id inputContainer
 id invisible
@@ -1927,10 +1931,12 @@ id places_autocomplete_try_again
 id places_autocomplete_try_again_progress
 id progress_circular
 id progress_horizontal
+id pwd
 id radio
 id rating
 id ratingA
 id ratingB
+id ratingBar
 id recycler
 id recyclerA
 id recyclerB
@@ -1943,6 +1949,7 @@ id right_icon
 id right_side
 id ripple_bg
 id root
+id rpwd
 id satellite
 id save_image_matrix
 id save_non_transition_alpha
@@ -2014,6 +2021,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -2022,6 +2030,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id token
 id toolbar
 id toolbara
 id toolbars
@@ -2036,6 +2045,7 @@ id transition_transform
 id uniform
 id unlabeled
 id up
+id update
 id url
 id useLogo
 id viewPager
@@ -2101,6 +2111,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_gym_data
 layout activity_compare_gym
+layout activity_forget_password
 layout activity_gym_list
 layout activity_gym_owner_profile
 layout activity_index2

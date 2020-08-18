@@ -54,6 +54,12 @@ dependencies {
     implementation 'com.github.whinc:ratingbar:1.1.1'
 
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+   // implementation group: 'javax.mail', name: 'mail', version: '1.4'
+    implementation files('libs\\activation.jar')
+    implementation files('libs\\additionnal.jar')
+    implementation files('libs\\mail.jar')
+
     /*implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3'
     implementation 'com.romandanylyk:pageindicatorview:1.0.2@aar'
     implementation 'com.makeramen:roundedimageview:2.3.0'

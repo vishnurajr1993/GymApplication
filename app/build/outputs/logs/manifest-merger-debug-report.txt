@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.3.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\d9f25cb840646c5cd61c78566c01c4db\places-2.3.0\AndroidManifest.xml:2:1-23:12
@@ -67,20 +67,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\vinu\.gradle\caches\
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\47f0dad2d625c8c90572677fc3d58217\firebase-database-collection-16.0.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\eaeaaf9f1029e88f82a7fe10adedd77d\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\26dcaa8b019b9bcb971957c992da8d69\transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:2:11-69
@@ -113,7 +113,7 @@ ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:8:22-77
 application
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-40:19
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:10:5-41:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:5.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\5e3cfac4c4c49d783cce5344d485987e\jetified-dexter-5.0.0\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\fd5af5ed399c2fe2609d80691d79245e\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -186,70 +186,74 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\vinu\.gradle\caches\trans
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:16:9-59
+activity#com.example.application.Activities.ForgetPasswordActivity
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:9-80
+	android:name
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:19-68
 activity#com.example.application.Activities.CompareGymActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:9-76
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:9-67
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:17:19-64
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:19-64
 activity#com.example.application.Activities.ShowServiceActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:9-68
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:9-68
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:18:19-65
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:19-65
 activity#com.example.application.Activities.GymListActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:9-64
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:9-64
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:19:19-61
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:20:19-61
 meta-data#com.google.android.geo.API_KEY
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:21:9-23:71
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:22:9-24:71
 	android:value
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:13-68
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:24:13-68
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:23:13-58
 activity#com.example.application.Activities.MapActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:9-60
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:26:9-60
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:25:19-57
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:26:19-57
 activity#com.example.application.Activities.SplashScreen
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:26:9-32:20
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:26:19-58
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:27:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.example.application.Activities.AddGymDataActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:33:9-67
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:33:19-64
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:19-64
 activity#com.example.application.Activities.GymOwnerProfileActivity
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:9-72
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:9-72
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:34:19-69
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:19-69
 activity#com.example.application.Owner
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:9-43
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:9-43
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:35:19-40
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:19-40
 activity#com.example.application.GymOwnerLogin
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:9-51
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:9-51
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:36:19-48
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:19-48
 activity#com.example.application.Index
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:9-43
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:9-43
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:37:19-40
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:19-40
 activity#com.example.application.Register
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:9-46
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:39:9-46
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:38:19-43
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:39:19-43
 activity#com.example.application.Dialogs.AddGymServicesDialog
-ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:39:9-66
+ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:40:9-66
 	android:name
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:39:19-63
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:40:19-63
 uses-sdk
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml

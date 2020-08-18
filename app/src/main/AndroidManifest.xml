@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Activities.CompareGymActivity"></activity>
+        <activity android:name=".Activities.ForgetPasswordActivity"></activity>
+        <activity android:name=".Activities.CompareGymActivity" />
         <activity android:name=".Activities.ShowServiceActivity" />
         <activity android:name=".Activities.GymListActivity" />
 

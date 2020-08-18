@@ -13,4 +13,7 @@ public class Constants {
     public static final String RATING="Rating";//db
     public static final String IS_LOGGEDIN="isloggedin";
     public static final String SERVICE_IMAGES="service_images";
+    public static final String TOKEN="token";
+    public static final String USER_NAME="username";
+    public static String token="";
 }

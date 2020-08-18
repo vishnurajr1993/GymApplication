@@ -65,7 +65,10 @@ public class Index extends AppCompatActivity {
                         startActivity(new Intent(Index.this, GymOwnerProfileActivity.class));
                         finish();
                     } else if (isLogedIn && !firstLoginOver) {
-                        startActivity(new Intent(Index.this, AddGymDataActivity.class));
+                        Intent intent=new Intent(Index.this, AddGymDataActivity.class);
+
+                        intent.putExtra("from","A");
+                        startActivity(intent);
                         finish();
                     }
                     if (dialog.isShowing()) {

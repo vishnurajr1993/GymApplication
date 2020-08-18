@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.application.Models.GymDetails;
 import com.example.application.Models.GymOwnerData;
+import com.example.application.Models.GymServiceDetails;
 import com.example.application.R;
 import com.example.application.Utils.DataProcessor;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -22,6 +23,8 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.List;
 
 import static com.example.application.Utils.Constants.FIRST_LOGIN_OWNER;
 import static com.example.application.Utils.Constants.GYM_DATA;
@@ -35,9 +38,11 @@ public class AddGymDataActivity extends AppCompatActivity {
     double longitude;
     EditText gym_name,gym_address,coordinates,website,contactPerson,contactno,des;
     Button submit;
-    DatabaseReference databaseGymData;
+    DatabaseReference databaseGymData,databaseGymDataEdit;
     DataProcessor dataProcessor;
     String ownerId="";
+    String from;
+    List<GymDetails> myList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +50,23 @@ public class AddGymDataActivity extends AppCompatActivity {
         dataProcessor=new DataProcessor(this);
         ownerId=dataProcessor.getStr(GYM_OWNER_ID);
         databaseGymData = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(ownerId);
+
         initViews();
+        Intent intent=getIntent();
+         from=intent.getStringExtra("from");
+        if(from.equals("E")){
+          myList = (List<GymDetails>) getIntent().getSerializableExtra("listE");
+            gym_name.setText(myList.get(0).getGymName());
+            gym_address.setText(myList.get(0).getGymAddress());
+            coordinates.setText(myList.get(0).getLattitude()+","+myList.get(0).getLongitude());
+            website.setText(myList.get(0).getWebsite());
+            contactPerson.setText(myList.get(0).getContactPeson());
+            contactno.setText(myList.get(0).getContactNo());
+            des.setText(myList.get(0).getDes());
+            latitude=myList.get(0).getLattitude();
+            longitude=myList.get(0).getLongitude();
+            submit.setText("Update");
+        }
     }
 
     private void initViews() {
@@ -75,7 +96,7 @@ public class AddGymDataActivity extends AppCompatActivity {
 
                 }else{
 
-
+                    if (from.equals("A")){
                     //TODO:push to firebase
                     String id1=databaseGymData.push().getKey();
                     GymDetails gymDetails=new GymDetails(id1,ownerId,gym_name.getText().toString(),gym_address.getText().toString()
@@ -87,6 +108,15 @@ public class AddGymDataActivity extends AppCompatActivity {
                     Toast.makeText(AddGymDataActivity.this, "Gym updated", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(AddGymDataActivity.this,GymOwnerProfileActivity.class));
                     finish();
+                }else if(from.equals("E")){
+                        databaseGymDataEdit = FirebaseDatabase.getInstance().getReference(GYM_DATA).
+                                child(ownerId).child(myList.get(0).getId());
+                        GymDetails gymDetails=new GymDetails(myList.get(0).getId(),ownerId,gym_name.getText().toString(),gym_address.getText().toString()
+                                ,website.getText().toString(),
+                                contactPerson.getText().toString(),contactno.getText().toString(),latitude,longitude,des.getText().toString());
+                        databaseGymDataEdit.setValue(gymDetails);
+                        finish();
+                    }
                 }
             }
         });
