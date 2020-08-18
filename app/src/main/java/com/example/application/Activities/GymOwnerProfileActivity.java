@@ -175,6 +175,7 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
         recycleListView.addItemDecoration(new SpacesItemDecoration(spacingInPixels));
         if (role == 1) {
             fab.setVisibility(View.GONE);
+            edit.setVisibility(View.GONE);
         }
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
