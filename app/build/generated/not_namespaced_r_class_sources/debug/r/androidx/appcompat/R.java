@@ -383,18 +383,18 @@ public final class R {
         public static final int primary_text_disabled_material_light = 0x7f05009e;
         public static final int ripple_material_dark = 0x7f0501fb;
         public static final int ripple_material_light = 0x7f0501fc;
-        public static final int secondary_text_default_material_dark = 0x7f050217;
-        public static final int secondary_text_default_material_light = 0x7f050218;
-        public static final int secondary_text_disabled_material_dark = 0x7f050219;
-        public static final int secondary_text_disabled_material_light = 0x7f05021a;
-        public static final int switch_thumb_disabled_material_dark = 0x7f05021b;
-        public static final int switch_thumb_disabled_material_light = 0x7f05021c;
-        public static final int switch_thumb_material_dark = 0x7f05021d;
-        public static final int switch_thumb_material_light = 0x7f05021e;
-        public static final int switch_thumb_normal_material_dark = 0x7f05021f;
-        public static final int switch_thumb_normal_material_light = 0x7f050220;
-        public static final int tooltip_background_dark = 0x7f050221;
-        public static final int tooltip_background_light = 0x7f050222;
+        public static final int secondary_text_default_material_dark = 0x7f050218;
+        public static final int secondary_text_default_material_light = 0x7f050219;
+        public static final int secondary_text_disabled_material_dark = 0x7f05021a;
+        public static final int secondary_text_disabled_material_light = 0x7f05021b;
+        public static final int switch_thumb_disabled_material_dark = 0x7f05021c;
+        public static final int switch_thumb_disabled_material_light = 0x7f05021d;
+        public static final int switch_thumb_material_dark = 0x7f05021e;
+        public static final int switch_thumb_material_light = 0x7f05021f;
+        public static final int switch_thumb_normal_material_dark = 0x7f050220;
+        public static final int switch_thumb_normal_material_light = 0x7f050221;
+        public static final int tooltip_background_dark = 0x7f050222;
+        public static final int tooltip_background_light = 0x7f050223;
     }
     public static final class dimen {
         private dimen() {}

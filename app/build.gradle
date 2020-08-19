@@ -59,7 +59,7 @@ dependencies {
     implementation files('libs\\activation.jar')
     implementation files('libs\\additionnal.jar')
     implementation files('libs\\mail.jar')
-
+    implementation 'com.karumi:dexter:4.2.0'
     /*implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3'
     implementation 'com.romandanylyk:pageindicatorview:1.0.2@aar'
     implementation 'com.makeramen:roundedimageview:2.3.0'

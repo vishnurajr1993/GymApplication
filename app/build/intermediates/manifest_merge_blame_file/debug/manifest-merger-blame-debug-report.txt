@@ -44,8 +44,8 @@
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.1.0] C:\Users\vinu\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
 26        android:debuggable="true"
-27        android:icon="@mipmap/ic_launcher"
-27-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-43
+27        android:icon="@mipmap/saurabh_icon"
+27-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-44
 28        android:label="@string/app_name"
 28-->F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:13:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"

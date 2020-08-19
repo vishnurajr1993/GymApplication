@@ -181,7 +181,7 @@ MERGED from [com.android.volley:volley:1.1.1] C:\Users\vinu\.gradle\caches\trans
 	android:roundIcon
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:12:9-44
 	android:allowBackup
 		ADDED from F:\vishnu\gymFinder\Application-master\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme

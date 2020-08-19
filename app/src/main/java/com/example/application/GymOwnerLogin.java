@@ -88,7 +88,7 @@ public class GymOwnerLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(role==1)
-                    customerPasswordReset();
+                    ownerPasswordReset();
                 else
                     ownerPasswordReset();
             }

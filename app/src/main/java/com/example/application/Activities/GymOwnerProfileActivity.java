@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -218,6 +221,8 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
                         ratingList.add(g);
                         rating += Float.parseFloat(g.getRating());
                     }
+                    LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
+                    stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
                     ratingBar.setRating(rating / ratingList.size());
                 }
             }

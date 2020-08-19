@@ -1178,6 +1178,7 @@ color rightTextSelectorColorDark
 color rippelColor
 color ripple_material_dark
 color ripple_material_light
+color saurabh_icon_background
 color searchBarBackIconTintColor
 color searchBarBackIconTintColorDark
 color searchBarClearIconTintColor
@@ -2177,6 +2178,9 @@ layout toolbar
 layout viewpager_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap layer_a
+mipmap saurabh_icon
+mipmap saurabh_icon_round
 raw places_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
