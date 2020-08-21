@@ -2,7 +2,7 @@ package com.example.application.Models;
 
 import java.io.Serializable;
 
-public class GymDetails implements Serializable {
+public class GymDetails implements Serializable {//hhhh
     public String id;
     public String ownerId;
     public String gymName;

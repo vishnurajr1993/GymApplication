@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbara"
+        layout="@layout/toolbar"/>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/compare"
+            android:fillViewport="false">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/compare"
+                android:orientation="horizontal"
+
+                tools:context=".Activities.CompareGymActivity">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Name"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Address"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Contact No"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Contact Person"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Website"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Services"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="200dp"
+                        android:text="Rating"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Name"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:id="@+id/addA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Address"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="50dp"
+                        android:text="Contact No"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:id="@+id/ownerA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Contact person"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:id="@+id/webA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Website"
+                        android:textColor="@android:color/black" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerA"
+                        tools:listitem="@layout/sevice_iem"
+                        class="androidx.appcompat.app.AlertController$RecycleListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Contact person"
+                        android:textColor="@android:color/black" />
+
+                    <RatingBar
+                        android:id="@+id/ratingA"
+                        style="@style/RatingBar"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:clickable="false"
+                        android:numStars="5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Name"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/addB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Gym Address"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/conB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Contact No"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/ownerB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Contact person"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/webB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Website"
+                        android:textColor="@android:color/black" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerB"
+                        tools:listitem="@layout/sevice_iem"
+                        class="androidx.appcompat.app.AlertController$RecycleListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="Contact person"
+                        android:textColor="@android:color/black" />
+
+                    <RatingBar
+                        android:id="@+id/ratingB"
+                        style="@style/RatingBar"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:isIndicator="true"
+                        android:max="5"
+                        android:numStars="5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout></HorizontalScrollView></LinearLayout>

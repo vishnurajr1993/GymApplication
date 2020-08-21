@@ -92,22 +92,50 @@ public class Register extends AppCompatActivity {
 
 
                 if (TextUtils.isEmpty(PhoneEntered) || PhoneEntered.length()<9 || !isValid(PhoneEntered) ) {
-                    phone.setError("please enter a valid irish no");
-                   // Toast.makeText(Register.this, "please enter a valid irish no", Toast.LENGTH_LONG).show();
+                    phone.setError("Enter valid Irish number starting with 081, 082, 083, 805, 086, 087, 089");
+                   // Toast.makeText(Register.this, "please enter pleasea valid irish no", Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 String emailPattern = "[a-zA-Z0-9_\\.+]+@(gmail|yahoo|hotmail)(\\.[a-z]{2,3}){1,2}";
 
+                if (TextUtils.isEmpty(EmailEntered) || !EmailEntered.contains("@") ) {
+                    email.setError("“@ missing, Enter valid Email address");
+                    //Toast.makeText(Register.this, "please enter Email", Toast.LENGTH_LONG).show();
+                    return;
+                }
                 if (TextUtils.isEmpty(EmailEntered) || !EmailEntered.matches(emailPattern) ) {
-                    email.setError("please enter a valid Email");
+                    email.setError("Only Hotmail, Gmail and Yahoo domains are accepted");
                     //Toast.makeText(Register.this, "please enter Email", Toast.LENGTH_LONG).show();
                     return;
                 }
 
-
+                Pattern specailCharPatten = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
+                Pattern UpperCasePatten = Pattern.compile("[A-Z ]");
+                Pattern lowerCasePatten = Pattern.compile("[a-z ]");
+                Pattern digitCasePatten = Pattern.compile("[0-9 ]");
+               String warning="Your password must include at least 8 characters " +
+                       "a mixture of Upper and Lower case characters including at least 1 number and " +
+                       "special character";
+               
+                if (!specailCharPatten.matcher(PasswordEntered).find()) {
+                    password.setError(warning);
+                    return;
+                }
+                if (!UpperCasePatten.matcher(PasswordEntered).find()) {
+                    password.setError(warning);
+                    return;
+                }
+                if (!lowerCasePatten.matcher(PasswordEntered).find()) {
+                    password.setError(warning);
+                    return;
+                }
+                if (!digitCasePatten.matcher(PasswordEntered).find()) {
+                    password.setError(warning);
+                    return;
+                }
                 if (TextUtils.isEmpty(PasswordEntered) || PasswordEntered.length()<8) {
-                    password.setError("You must have 8 characters in your password");
+                    password.setError(warning);
                     //Toast.makeText(Register.this, "You must have 8 characters in your password", Toast.LENGTH_LONG).show();
                     return;
                 }

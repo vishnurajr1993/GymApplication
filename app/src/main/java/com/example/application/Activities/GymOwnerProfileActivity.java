@@ -17,8 +17,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.application.Dialogs.AddGymServicesDialog;
+import com.example.application.Index;
 import com.example.application.Models.GymDetails;
 import com.example.application.Models.GymServiceDetails;
 import com.example.application.Models.RatingModel;
@@ -61,10 +63,10 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
     String gymId;
     RatingBar ratingBar;
     int role;
-    TextView title;
+    TextView title,logout;
     Float rating = 0.0f;
     List<RatingModel> ratingList;
-    ImageView logout, edit;
+    ImageView  edit,back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,7 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
         dp = new DataProcessor(this);
         role = dp.getInt(ROLE);
         if (role == 0) {
+            Intent intent = getIntent();
             gymownerId = dp.getStr(GYM_OWNER_ID);
             gymId = dp.getStr(GYM_ID);
         } else {
@@ -88,12 +91,15 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CommomDataArea.logOut(GymOwnerProfileActivity.this);
+                startActivity(new Intent(GymOwnerProfileActivity.this, Index.class));
                 finish();
             }
         });
+        back=findViewById(R.id.back);
+       back.setVisibility(View.GONE);
         gymDetails = new ArrayList<>();
         databaseGym = FirebaseDatabase.getInstance().getReference(GYM_DATA).child(gymownerId);
-        databaseServices = FirebaseDatabase.getInstance().getReference(GYM_SERVICES).child(gymId);
+        databaseServices = FirebaseDatabase.getInstance().getReference(GYM_SERVICES).child(gymownerId);
         initviews();
         loadRating();
         databaseGym.addValueEventListener(new ValueEventListener() {
@@ -146,6 +152,7 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
                         public void editPosition(int position) {
                             Intent intent=  new Intent(GymOwnerProfileActivity.this, AddGymServicesDialog.class);
                             intent.putExtra("from","E");
+                            intent.putExtra(GYM_OWNER_ID,gymownerId);
                             intent.putExtra("list", (Serializable) gymServiceDetailsList.get(position));
                             startActivity(intent);
                         }
@@ -198,9 +205,13 @@ public class GymOwnerProfileActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent intent=  new Intent(GymOwnerProfileActivity.this, AddGymServicesDialog.class);
-              intent.putExtra("from","A");
-                startActivity(intent);
+                if (gymServiceDetailsList != null && gymServiceDetailsList.size() <= 10) {
+                    Intent intent = new Intent(GymOwnerProfileActivity.this, AddGymServicesDialog.class);
+                    intent.putExtra("from", "A");
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(GymOwnerProfileActivity.this, "Maximum Service limit of 10 Exceeded", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

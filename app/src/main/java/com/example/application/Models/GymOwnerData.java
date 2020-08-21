@@ -1,6 +1,6 @@
 package com.example.application.Models;
 
-public class GymOwnerData {
+public class GymOwnerData {//hhh
     String id;
     String fname;
     String lname;

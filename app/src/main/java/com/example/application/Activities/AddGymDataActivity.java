@@ -96,7 +96,7 @@ public class AddGymDataActivity extends AppCompatActivity {
 
                 }else{
 
-                    if (from.equals("A")){
+                    if (from.equals("A")){//kk
                     //TODO:push to firebase
                     String id1=databaseGymData.push().getKey();
                     GymDetails gymDetails=new GymDetails(id1,ownerId,gym_name.getText().toString(),gym_address.getText().toString()

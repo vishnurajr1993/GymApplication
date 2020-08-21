@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.example.application.Utils.Constants.GYM_DATA;
+import static com.example.application.Utils.Constants.GYM_ID;
 import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 import static com.example.application.Utils.Constants.IS_LOGGEDIN;
 import static com.example.application.Utils.Constants.ROLE;
@@ -160,6 +161,7 @@ public class Index extends AppCompatActivity {
                         firstLoginOver = true;
                     }
                     if (isLogedIn && firstLoginOver) {
+                        dp.setStr(GYM_ID,gymDetails.get(0).getId());
                         startActivity(new Intent(Index.this, GymOwnerProfileActivity.class));
                         finish();
                     } else if (isLogedIn && !firstLoginOver) {

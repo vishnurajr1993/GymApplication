@@ -35,6 +35,7 @@ import java.util.Objects;
 import java.util.Random;
 
 import static com.example.application.Utils.Constants.GYM_DATA;
+import static com.example.application.Utils.Constants.GYM_ID;
 import static com.example.application.Utils.Constants.GYM_OWNER;
 import static com.example.application.Utils.Constants.GYM_OWNER_ID;
 import static com.example.application.Utils.Constants.IS_LOGGEDIN;
@@ -156,11 +157,12 @@ private void ownerPasswordReset(){
                         // do something with the individual "issues"
                         GymOwnerData usersBean = user.getValue(GymOwnerData.class);
                         try {
+
                             String pwd= AESCrypt.decrypt(usersBean.getPassword());
 
                         if (pwd.equals(Password.getText().toString().trim())) {
                             checkForFirstUser(usersBean.getId(),usersBean);
-
+                            dataProcessor.setStr(GYM_OWNER,usersBean.getId());
                         } else {
                             Toast.makeText(GymOwnerLogin.this, "Password is wrong", Toast.LENGTH_LONG).show();
                         }

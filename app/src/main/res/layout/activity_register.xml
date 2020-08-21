@@ -145,7 +145,7 @@
         android:layout_height="54dp"
         android:background="@drawable/button_white"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Sign Up"
+        android:text="REGISTER"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
